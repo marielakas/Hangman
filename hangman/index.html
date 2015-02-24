@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman - Team Apple</title>
+	<meta charset="utf-8" />
+	<link href="icons/favicon.ico" rel="shortcut icon" /> 
+	<link rel="stylesheet" href="css/styles.css" />
+	<script type="text/javascript" src="scripts/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src = "scripts/modernizr.custom.62303.js"></script>
+	<script type="text/javascript" src = "scripts/local.js"></script>
+	<script type="text/javascript" src= "scripts/drawHangman.js"></script>
+	<script type="text/javascript" src= "scripts/keyboardGenerator.js"></script>
+	<script type="text/javascript" src= "scripts/word.js"></script>
+	<script type="text/javascript" src = "scripts/generateRandomWord.js"></script>
+	<script type="text/javascript" src = "scripts/gameStatus.js"></script>
+	<script type="text/javascript" src = "scripts/scoreBoard.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="current-score">
+			<!-- timer, current points player name etc... -->
+		</div>
+
+		<div id="hangman">
+			<canvas width="370" height="450">
+				Canvas not supported
+			</canvas>
+		</div>
+		
+		<div id="used-letters">
+		</div>
+
+		<div id="word">
+			<!-- P _ _ R -->
+		</div>
+
+		<div id="keyboard">
+		</div>
+
+		<div id="scoreboard">
+			<!-- shows when game is over -->
+		</div>
+
+	<div id="overlay">
+	</div>
+	<div id="prompt-message">
+		<span id="prompt-message-text"></span>
+		<div id="prompt-message-buttons-set">
+			<input type="button" id="again" value="Try again">
+		</div>
+	</div>
+	<div id="fb-root"></div>
+
+	<a id = "share_button" href="#"></a>
+	</div>
+	<script type="text/javascript" src="scripts/gameEngine.js"></script>
+	<script type="text/javascript" src = "scripts/facebookApi.js"></script>
+</body>
+</html>
